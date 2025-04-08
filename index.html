@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2> Asynchronous functions in Javascipt </h2>
+    <p id="result"></p>
+    <script>
+        async function add(a, b) {
+            let response = await a + b;
+            display(response);
+        }
+        function display(some) {
+            document.getElementById("result").innerHTML = some;
+        }
+        add(5, 20)
+    </script>
+</body>
+
+</html>
